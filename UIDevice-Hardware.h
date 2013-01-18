@@ -6,39 +6,39 @@
 
 #import <UIKit/UIKit.h>
 
-#define IFPGA_NAMESTRING                @"iFPGA"
+#define IFPGA_NAMESTRING @"iFPGA"
 
-#define IPHONE_1G_NAMESTRING            @"iPhone 1G"
-#define IPHONE_3G_NAMESTRING            @"iPhone 3G"
-#define IPHONE_3GS_NAMESTRING           @"iPhone 3GS" 
-#define IPHONE_4_NAMESTRING             @"iPhone 4" 
-#define IPHONE_4S_NAMESTRING            @"iPhone 4S"
-#define IPHONE_5_NAMESTRING             @"iPhone 5"
-#define IPHONE_UNKNOWN_NAMESTRING       @"Unknown iPhone"
+#define IPHONE_1G_NAMESTRING @"iPhone 1G"
+#define IPHONE_3G_NAMESTRING @"iPhone 3G"
+#define IPHONE_3GS_NAMESTRING @"iPhone 3GS"
+#define IPHONE_4_NAMESTRING @"iPhone 4"
+#define IPHONE_4S_NAMESTRING @"iPhone 4S"
+#define IPHONE_5_NAMESTRING @"iPhone 5"
+#define IPHONE_UNKNOWN_NAMESTRING @"Unknown iPhone"
 
-#define IPOD_1G_NAMESTRING              @"iPod touch 1G"
-#define IPOD_2G_NAMESTRING              @"iPod touch 2G"
-#define IPOD_3G_NAMESTRING              @"iPod touch 3G"
-#define IPOD_4G_NAMESTRING              @"iPod touch 4G"
-#define IPOD_UNKNOWN_NAMESTRING         @"Unknown iPod"
+#define IPOD_1G_NAMESTRING @"iPod touch 1G"
+#define IPOD_2G_NAMESTRING @"iPod touch 2G"
+#define IPOD_3G_NAMESTRING @"iPod touch 3G"
+#define IPOD_4G_NAMESTRING @"iPod touch 4G"
+#define IPOD_UNKNOWN_NAMESTRING @"Unknown iPod"
 
-#define IPAD_1G_NAMESTRING              @"iPad 1G"
-#define IPAD_2G_NAMESTRING              @"iPad 2G"
-#define IPAD_3G_NAMESTRING              @"iPad 3G"
-#define IPAD_4G_NAMESTRING              @"iPad 4G"
-#define IPAD_UNKNOWN_NAMESTRING         @"Unknown iPad"
+#define IPAD_1G_NAMESTRING @"iPad 1G"
+#define IPAD_2G_NAMESTRING @"iPad 2G"
+#define IPAD_3G_NAMESTRING @"iPad 3G"
+#define IPAD_4G_NAMESTRING @"iPad 4G"
+#define IPAD_UNKNOWN_NAMESTRING @"Unknown iPad"
 
-#define APPLETV_2G_NAMESTRING           @"Apple TV 2G"
-#define APPLETV_3G_NAMESTRING           @"Apple TV 3G"
-#define APPLETV_4G_NAMESTRING           @"Apple TV 4G"
-#define APPLETV_UNKNOWN_NAMESTRING      @"Unknown Apple TV"
+#define APPLETV_2G_NAMESTRING @"Apple TV 2G"
+#define APPLETV_3G_NAMESTRING @"Apple TV 3G"
+#define APPLETV_4G_NAMESTRING @"Apple TV 4G"
+#define APPLETV_UNKNOWN_NAMESTRING @"Unknown Apple TV"
 
-#define IOS_FAMILY_UNKNOWN_DEVICE       @"Unknown iOS device"
+#define IOS_FAMILY_UNKNOWN_DEVICE @"Unknown iOS device"
 
-#define SIMULATOR_NAMESTRING            @"iPhone Simulator"
-#define SIMULATOR_IPHONE_NAMESTRING     @"iPhone Simulator"
-#define SIMULATOR_IPAD_NAMESTRING       @"iPad Simulator"
-#define SIMULATOR_APPLETV_NAMESTRING    @"Apple TV Simulator" // :)
+#define SIMULATOR_NAMESTRING @"iPhone Simulator"
+#define SIMULATOR_IPHONE_NAMESTRING @"iPhone Simulator"
+#define SIMULATOR_IPAD_NAMESTRING @"iPad Simulator"
+#define SIMULATOR_APPLETV_NAMESTRING @"Apple TV Simulator" // :)
 
 typedef enum {
     UIDeviceUnknown,
@@ -74,7 +74,7 @@ typedef enum {
     UIDeviceUnknowniPad,
     UIDeviceUnknownAppleTV,
     UIDeviceIFPGA,
-
+    
 } UIDevicePlatform;
 
 typedef enum {
@@ -86,11 +86,25 @@ typedef enum {
     
 } UIDeviceFamily;
 
+typedef enum {
+    UIDeviceComparisonResultFamilyMismatch,
+    UIDeviceComparisonResultOtherOlder,
+    UIDeviceComparisonResultOtherNewer,
+    UIDeviceComparisonResultEqual,
+    UIDeviceComparisonResultUnknown,
+    
+} UIDeviceComparisonResult;
+
 @interface UIDevice (Hardware)
+
 - (NSString *) platform;
 - (NSString *) hwmodel;
-- (NSUInteger) platformType;
+- (UIDevicePlatform) platformType;
+- (UIDevicePlatform) platformTypeForPlatform: (NSString *) platform;
 - (NSString *) platformString;
+
+- (UIDeviceComparisonResult) compareCurrentPlatformWithOtherPlatform:(NSString *)otherPlatform;
+- (UIDeviceComparisonResult) comparePlatform:(NSString *)platform withOtherPlatform:(NSString *)otherPlatform;
 
 - (NSUInteger) cpuFrequency;
 - (NSUInteger) busFrequency;
@@ -105,4 +119,6 @@ typedef enum {
 
 - (BOOL) hasRetinaDisplay;
 - (UIDeviceFamily) deviceFamily;
+- (UIDeviceFamily) deviceFamilyForPlatform: (NSString *) platform;
+
 @end
