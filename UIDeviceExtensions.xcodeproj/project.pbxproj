@@ -12,7 +12,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		8E03075512382230000616A0 /* GraphicsServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E03075412382230000616A0 /* GraphicsServices.framework */; };
-		8E278438101E6BCE002772F5 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E278431101E6BCE002772F5 /* wwanconnect.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8E3A1F090FAA199F009B0518 /* cover320x416.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3A1F080FAA199F009B0518 /* cover320x416.png */; };
 		8E4156E90FA4EE0E0006D27C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E4156E70FA4EE0E0006D27C /* Default.png */; };
 		8E4156EA0FA4EE0E0006D27C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E4156E80FA4EE0E0006D27C /* icon.png */; };
@@ -21,7 +20,6 @@
 		8E9B2373101E2D3A005DB65B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B2372101E2D3A005DB65B /* SystemConfiguration.framework */; };
 		8EC1C37815A2387100C782C4 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C37715A2387100C782C4 /* UIDevice-Hardware.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8EC1C37B15A2387C00C782C4 /* UIDevice-Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C37A15A2387C00C782C4 /* UIDevice-Orientation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8EC1C38515A2392400C782C4 /* UIDevice-Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1C38415A2392400C782C4 /* UIDevice-Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +31,6 @@
 		32CA4F630368D1EE00C91783 /* UIDeviceExtensions_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceExtensions_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E03075412382230000616A0 /* GraphicsServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/PrivateFrameworks/GraphicsServices.framework; sourceTree = DEVELOPER_DIR; };
-		8E278431101E6BCE002772F5 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wwanconnect.c; path = "Apple Sample Code/wwanconnect.c"; sourceTree = "<group>"; };
-		8E278432101E6BCE002772F5 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wwanconnect.h; path = "Apple Sample Code/wwanconnect.h"; sourceTree = "<group>"; };
 		8E3A1F080FAA199F009B0518 /* cover320x416.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover320x416.png; sourceTree = "<group>"; };
 		8E3E64B91028A0EB0009F50A /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
 		8E3E64BB1028A0EB0009F50A /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
@@ -51,8 +47,6 @@
 		8EC1C37715A2387100C782C4 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		8EC1C37915A2387C00C782C4 /* UIDevice-Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Orientation.h"; sourceTree = "<group>"; };
 		8EC1C37A15A2387C00C782C4 /* UIDevice-Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Orientation.m"; sourceTree = "<group>"; };
-		8EC1C38315A2392400C782C4 /* UIDevice-Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Reachability.h"; sourceTree = "<group>"; };
-		8EC1C38415A2392400C782C4 /* UIDevice-Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Reachability.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,11 +84,8 @@
 				8EC1C37715A2387100C782C4 /* UIDevice-Hardware.m */,
 				8E3E79EB1237E44200FAD883 /* UIDevice-Capabilities.h */,
 				8E3E79EC1237E44200FAD883 /* UIDevice-Capabilities.m */,
-				8EC1C38315A2392400C782C4 /* UIDevice-Reachability.h */,
-				8EC1C38415A2392400C782C4 /* UIDevice-Reachability.m */,
 				8E3E64BB1028A0EB0009F50A /* UIDevice-IOKitExtensions.h */,
 				8E3E64B91028A0EB0009F50A /* UIDevice-IOKitExtensions.m */,
-				8E27843B101E6BD3002772F5 /* Apple */,
 				8EB688610FA64AD100489E4B /* Support */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -113,15 +104,6 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8E27843B101E6BD3002772F5 /* Apple */ = {
-			isa = PBXGroup;
-			children = (
-				8E278431101E6BCE002772F5 /* wwanconnect.c */,
-				8E278432101E6BCE002772F5 /* wwanconnect.h */,
-			);
-			name = Apple;
 			sourceTree = "<group>";
 		};
 		8EB688610FA64AD100489E4B /* Support */ = {
@@ -203,10 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				8E278438101E6BCE002772F5 /* wwanconnect.c in Sources */,
 				8EC1C37815A2387100C782C4 /* UIDevice-Hardware.m in Sources */,
 				8EC1C37B15A2387C00C782C4 /* UIDevice-Orientation.m in Sources */,
-				8EC1C38515A2392400C782C4 /* UIDevice-Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
