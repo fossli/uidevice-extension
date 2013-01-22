@@ -18,12 +18,12 @@
 		8E785FCB0FCDB853006EA81F /* TestBedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E785FCA0FCDB853006EA81F /* TestBedViewController.xib */; };
 		8E7EA6631028A1A7004DB9E8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7EA6621028A1A7004DB9E8 /* IOKit.framework */; };
 		8E9B2373101E2D3A005DB65B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9B2372101E2D3A005DB65B /* SystemConfiguration.framework */; };
-		A3C1694D16AEC342008C5163 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = A3C1694216AEC342008C5163 /* wwanconnect.c */; };
 		A3C1694E16AEC342008C5163 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1694516AEC342008C5163 /* UIDevice-Hardware.m */; };
 		A3C1694F16AEC342008C5163 /* UIDevice-HardwareTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1694616AEC342008C5163 /* UIDevice-HardwareTest.m */; };
 		A3C1695016AEC342008C5163 /* UIDevice-IOKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1694816AEC342008C5163 /* UIDevice-IOKitExtensions.m */; };
 		A3C1695116AEC342008C5163 /* UIDevice-Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1694A16AEC342008C5163 /* UIDevice-Orientation.m */; };
 		A3C1695216AEC342008C5163 /* UIDevice-Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1694C16AEC342008C5163 /* UIDevice-Reachability.m */; };
+		A3C1696B16AEC66D008C5163 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = A3C1696916AEC66D008C5163 /* wwanconnect.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,6 @@
 		8E7D45931128878A00B184C5 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		8E7EA6621028A1A7004DB9E8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		8E9B2372101E2D3A005DB65B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A3C1694216AEC342008C5163 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
-		A3C1694316AEC342008C5163 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
 		A3C1694416AEC342008C5163 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
 		A3C1694516AEC342008C5163 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		A3C1694616AEC342008C5163 /* UIDevice-HardwareTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-HardwareTest.m"; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		A3C1694A16AEC342008C5163 /* UIDevice-Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Orientation.m"; sourceTree = "<group>"; };
 		A3C1694B16AEC342008C5163 /* UIDevice-Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Reachability.h"; sourceTree = "<group>"; };
 		A3C1694C16AEC342008C5163 /* UIDevice-Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Reachability.m"; sourceTree = "<group>"; };
+		A3C1696916AEC66D008C5163 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wwanconnect.c; sourceTree = "<group>"; };
+		A3C1696A16AEC66D008C5163 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,6 @@
 		A3C1694016AEC342008C5163 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A3C1694116AEC342008C5163 /* Apple Sample Code */,
 				A3C1694416AEC342008C5163 /* UIDevice-Hardware.h */,
 				A3C1694516AEC342008C5163 /* UIDevice-Hardware.m */,
 				A3C1694616AEC342008C5163 /* UIDevice-HardwareTest.m */,
@@ -134,17 +133,10 @@
 				A3C1694A16AEC342008C5163 /* UIDevice-Orientation.m */,
 				A3C1694B16AEC342008C5163 /* UIDevice-Reachability.h */,
 				A3C1694C16AEC342008C5163 /* UIDevice-Reachability.m */,
+				A3C1696A16AEC66D008C5163 /* wwanconnect.h */,
+				A3C1696916AEC66D008C5163 /* wwanconnect.c */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		A3C1694116AEC342008C5163 /* Apple Sample Code */ = {
-			isa = PBXGroup;
-			children = (
-				A3C1694216AEC342008C5163 /* wwanconnect.c */,
-				A3C1694316AEC342008C5163 /* wwanconnect.h */,
-			);
-			path = "Apple Sample Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,12 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				A3C1694D16AEC342008C5163 /* wwanconnect.c in Sources */,
 				A3C1694E16AEC342008C5163 /* UIDevice-Hardware.m in Sources */,
 				A3C1694F16AEC342008C5163 /* UIDevice-HardwareTest.m in Sources */,
 				A3C1695016AEC342008C5163 /* UIDevice-IOKitExtensions.m in Sources */,
 				A3C1695116AEC342008C5163 /* UIDevice-Orientation.m in Sources */,
 				A3C1695216AEC342008C5163 /* UIDevice-Reachability.m in Sources */,
+				A3C1696B16AEC66D008C5163 /* wwanconnect.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
