@@ -38,8 +38,6 @@
 		8E3A1F080FAA199F009B0518 /* cover320x416.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover320x416.png; sourceTree = "<group>"; };
 		8E3E64B91028A0EB0009F50A /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
 		8E3E64BB1028A0EB0009F50A /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
-		8E3E79EB1237E44200FAD883 /* UIDevice-Capabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Capabilities.h"; sourceTree = "<group>"; };
-		8E3E79EC1237E44200FAD883 /* UIDevice-Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Capabilities.m"; sourceTree = "<group>"; };
 		8E4156E70FA4EE0E0006D27C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8E4156E80FA4EE0E0006D27C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8E785FCA0FCDB853006EA81F /* TestBedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestBedViewController.xib; sourceTree = "<group>"; };
@@ -88,8 +86,6 @@
 				8EC1C37A15A2387C00C782C4 /* UIDevice-Orientation.m */,
 				8EC1C37615A2387100C782C4 /* UIDevice-Hardware.h */,
 				8EC1C37715A2387100C782C4 /* UIDevice-Hardware.m */,
-				8E3E79EB1237E44200FAD883 /* UIDevice-Capabilities.h */,
-				8E3E79EC1237E44200FAD883 /* UIDevice-Capabilities.m */,
 				8EC1C38315A2392400C782C4 /* UIDevice-Reachability.h */,
 				8EC1C38415A2392400C782C4 /* UIDevice-Reachability.m */,
 				8E3E64BB1028A0EB0009F50A /* UIDevice-IOKitExtensions.h */,
