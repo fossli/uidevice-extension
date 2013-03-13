@@ -6,6 +6,8 @@
 
 #import <UIKit/UIKit.h>
 
+// https://www.dropbox.com/s/m3vgofezn88tb48/iOS_Support_Matrix_Early2013_v2.1.pdf
+
 #define IFPGA_NAMESTRING @"iFPGA"
 
 #define IPHONE_1G_NAMESTRING @"iPhone 1G"
